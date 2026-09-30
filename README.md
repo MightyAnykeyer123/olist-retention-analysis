@@ -1,14 +1,43 @@
-# E-Commerce Customer Retention & Fulfillment Analysis
-An end-to-end Business Analyst portfolio project evaluating 100,000+ orders to diagnose customer churn and logistics bottlenecks.
+# Olist E-Commerce Retention & Fulfillment Analysis
 
-## Executive Summary
-- **Baseline Retention:** 3.0% repeat purchase rate across 93,358 unique customers (97% churn).
-- **Logistics Impact:** On-time deliveries maintain a 4.29 CSAT (6.63% 1-star reviews), whereas late deliveries collapse to 2.27 CSAT (53.69% 1-star reviews) — an 8.1x surge in churn-driving sentiment.
-- **Category Bottlenecks:** Heavy goods like `office_furniture` lead dissatisfaction with 20.37% 1-star reviews.
+An end-to-end business analytics project diagnosing fulfillment-driven customer churn across 100k+ orders on Brazil's largest marketplace, Olist. The analysis demonstrates how logistics SLA breaches degrade customer sentiment and proposes an automated, SLA-triggered retention engine.
 
-## Portfolio Deliverables
-- `sql_analysis.sql`: Production SQL data extractions and aggregations.
-- `BRD.pdf`: 1-Page Business Requirements Document.
-- `process_flow.png`: Current vs. Future State order fulfillment swimlane diagrams.
-- `Jira_Sprint_Board.png`: Agile sprint and user story tracking.
-- `Executive_Dashboard.pbix`: Power BI delivery performance and retention tracker.
+---
+
+## Executive Summary & Core Findings
+
+* **Retention Baseline:** Unique customer repeat purchase rate is **3.00%** (97.00% single-purchase churn across 93,358 unique delivered customers).
+* **Delivery Performance Impact:** Orders delivered late suffer an **8.1x surge** in 1-star reviews (53.69% of late orders receive 1 star vs. 6.63% for on-time orders).
+** **Customer Sentiment Collapse:** Overall CSAT plummets from **4.29 / 5.0** on on-time deliveries down to **2.27 / 5.0** when orders breach promised delivery dates.
+* **Category Risk:** Bulky freight categories exhibit severe churn risk--**Office Furniture** leads all categories with a **20.37%** negative review share.
+
+---
+
+## Executive Analytics Dashboard
+
+![Executive Dashboard](executive_dashboard.png)
+
+---
+
+## Operational Process Flow: Current vs. Proposed Future State
+
+To mitigate fulfillment-driven churn, the workflow transitions from reactive customer support to an automated, milestone-driven retention safeguard:
+
+![Process Flow](process_flow.png)
+
+---
+
+## Agile Project Delivery (Jira)
+
+Project execution was tracked across four core technical user stories using a Kanban framework:
+
+![Jira Kanban Board](jira_kanban_board.png)
+
+---
+
+## Technical Stack
+
+* **SQL [SQLite]:** Cohort analysis, repeat purchase computations, and aggregated SLA review metrics.
+* **Python [pandas, seaborn, matplotlib]:** Data aggregation, automated executive visual pipelines, and reporting.
+* **draw.io:** Current vs. future state operational swimlane process modeling.
+* **Atlassian Jira:** Agile delivery management and user story lifecycle tracking.
