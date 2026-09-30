@@ -1,0 +1,5 @@
+olist.db
+olist_data/
+*.csv
+*.zip
+.DS_Store
