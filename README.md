@@ -31,7 +31,7 @@ To mitigate fulfillment-driven churn, the workflow transitions from reactive cus
 
 Project execution was tracked across four core technical user stories using a Kanban framework:
 
-![Jira Kanban Board](jira_kanban_board.png)
+![Jira Kanban Board](jira_kanban_board.png?v=2)
 
 ---
 
